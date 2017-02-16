@@ -18,7 +18,7 @@ public class Desencriptador {
 		String temporal = mensajeCodificado;
 		
 		for(int i=0;i<=saltos;i++){
-			String parteInicial = temporal.substring(temporal.length()-1, temporal.length());
+			char parteInicial = temporal.charAt(temporal.length()-1);
 			String parteFinal = temporal.substring(0, temporal.length()-1);
 			temporal = parteInicial + parteFinal;
 		}
